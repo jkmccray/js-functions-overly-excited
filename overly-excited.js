@@ -86,7 +86,7 @@ function addExcitement3 (theWordArray, punctuate) {
       buildMeUp = buildMeUp + " " + sentence[i-1]
 
       if (i % 3 === 0) {
-        buildMeUp = buildMeUp + " " + punctuate
+        buildMeUp = buildMeUp + punctuate
       }
 
       console.log(buildMeUp)
@@ -105,7 +105,7 @@ function addExcitement4 (theWordArray, punctuate, howMany) {
       buildMeUp = buildMeUp + " " + sentence[i-1]
 
       if (i % 3 === 0) {
-        buildMeUp = buildMeUp + " " + punctuate.repeat(howMany)
+        buildMeUp = buildMeUp + punctuate.repeat(howMany)
       }
 
       console.log(buildMeUp)
@@ -123,7 +123,7 @@ let addExcitement5 = (theWordArray, punctuate, howMany) => {
       buildMeUp = buildMeUp + " " + sentence[i-1]
 
       if (i % 3 === 0) {
-        buildMeUp = buildMeUp + " " + punctuate.repeat(howMany)
+        buildMeUp = buildMeUp + punctuate.repeat(howMany)
       }
 
       console.log(buildMeUp)
