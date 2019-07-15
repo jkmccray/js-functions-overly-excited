@@ -14,7 +14,7 @@ function addExcitement (theWordArray) {
 
     for (let i = 0; i < theWordArray.length; i++) {
         // Concatenate the new word onto buildMeUp
-        buildMeUp = buildMeUp + " " + sentence[i]
+        buildMeUp += `${theWordArray[i]} `
         // Print buildMeUp to the console
         console.log(buildMeUp)
     }
@@ -22,6 +22,7 @@ function addExcitement (theWordArray) {
 }
 
 addExcitement(sentence)
+
 
 // ------ Practice: Some words are more exciting than others ------
 function addExcitement1 (theWordArray) {
@@ -35,10 +36,10 @@ function addExcitement1 (theWordArray) {
       
             Otherwise, just concatenate the word itself.
          */
-        buildMeUp = buildMeUp + " " + sentence[i-1]
+        buildMeUp += ` ${theWordArray[i-1]}`
 
-        if (i % 3 === 0) {
-          buildMeUp = buildMeUp + "!"
+        if (i % 3 === 0) {  
+          buildMeUp += "!"
         }
 
         // Print buildMeUp to the console
@@ -63,11 +64,11 @@ function addExcitement2 (theWordArray) {
        */
 
       if (i % 3 === 0 && i > 0) {
-        buildMeUp = buildMeUp + "! " + sentence[i]
+        buildMeUp += `! ${theWordArray[i]}`
       } else if (i+1 === theWordArray.length && (i+1) % 3 === 0) {
-        buildMeUp = buildMeUp + " " + sentence[i] + "!"
+        buildMeUp += ` ${theWordArray[i]}!`
       } else {
-      buildMeUp = buildMeUp + " " + sentence[i]
+      buildMeUp += ` ${theWordArray[i]}`
       }
 
       // Print buildMeUp to the console
@@ -83,10 +84,10 @@ function addExcitement3 (theWordArray, punctuate) {
   let buildMeUp = ""
 
   for (let i = 1; i <= theWordArray.length; i++) {
-      buildMeUp = buildMeUp + " " + sentence[i-1]
+      buildMeUp += ` ${theWordArray[i-1]}`
 
       if (i % 3 === 0) {
-        buildMeUp = buildMeUp + punctuate
+        buildMeUp += `${punctuate}`
       }
 
       console.log(buildMeUp)
@@ -102,10 +103,10 @@ function addExcitement4 (theWordArray, punctuate, howMany) {
 
   for (let i = 1; i <= theWordArray.length; i++) {
       
-      buildMeUp = buildMeUp + " " + sentence[i-1]
+      buildMeUp += ` ${theWordArray[i-1]}`
 
       if (i % 3 === 0) {
-        buildMeUp = buildMeUp + punctuate.repeat(howMany)
+        buildMeUp += `${punctuate.repeat(howMany)}`
       }
 
       console.log(buildMeUp)
@@ -120,10 +121,10 @@ let addExcitement5 = (theWordArray, punctuate, howMany) => {
   let buildMeUp = ""
 
   for (let i = 1; i <= theWordArray.length; i++) {
-      buildMeUp = buildMeUp + " " + sentence[i-1]
+      buildMeUp += ` ${theWordArray[i-1]}`
 
       if (i % 3 === 0) {
-        buildMeUp = buildMeUp + punctuate.repeat(howMany)
+        buildMeUp += `${punctuate.repeat(howMany)}`
       }
 
       console.log(buildMeUp)
